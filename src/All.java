@@ -10,7 +10,6 @@ class Person{
         this.middleName = middleName;
         this.familyName = familyName;
     }
-
     public String getName() {
         return name;
     }
@@ -23,7 +22,6 @@ class Person{
     public void setName(String name) {
         this.name = name;
     }
-
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
     }

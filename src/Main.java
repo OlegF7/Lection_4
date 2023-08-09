@@ -18,7 +18,6 @@ public class Main {
                 System.out.println("Почему вы не ввели имя?");
                 i++; // увеличиваем счетчик попыток
             }
-
         }
         System.out.println("\nПока " + name + " больше сюда не пиши.");
         scan.close();
