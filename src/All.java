@@ -4,7 +4,7 @@ class Person {
     private String name;
     private String middleName;
     private String familyName;
-    private final int age;
+    private int age;
 
     Person(String name, String familyName, String middleName, int age) {
         this.name = name;
@@ -39,7 +39,8 @@ class Person {
     public void setFamilyName(String familyName) {
         this.familyName = familyName;
     }
-    public void setAge() {
+    public void setAge(int age) {
+        this.age = age;
     }
 
     @Override
@@ -53,6 +54,9 @@ public class All {
     public static void main(String[] args) {
         Person person = new Person("John", "Dow", "Junior", 35);
         System.out.println(person.toString());
+
+        int age = person.getAge();
+        System.out.println("Возраст:" + age);
 
         person.setMiddleName("William");
         System.out.println(person.getMiddleName());
