@@ -2,16 +2,17 @@ public class Forr {
 
     public static void main(String[] args) {
         for (int i = 100; i >= 1; i--) {
-            multiplicityСheck(i);
+            if (multiplicityСheck(i)) {
+                System.out.println(i);
+            }
+
         }
     }
 
-    public static void multiplicityСheck(int i){
+    public static boolean multiplicityСheck(int i){
         if (i % 4 == 0) {
-            System.out.println(i);
+         return true;
         }
+        return false;
     }
-
-
-
 }
