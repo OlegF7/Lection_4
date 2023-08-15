@@ -5,7 +5,6 @@ public class Forr {
             if (multiplicityСheck(i)) {
                 System.out.println(i);
             }
-
         }
     }
 
