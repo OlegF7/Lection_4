@@ -1,3 +1,4 @@
+import java.util.Calendar;
 import java.util.IllegalFormatCodePointException;
 
 class Person {
@@ -43,6 +44,10 @@ class Person {
         this.age = age;
     }
 
+    public int getYear(){
+        return Calendar.getInstance().get(Calendar.YEAR) - age;
+    }
+
     @Override
     public String toString() {
         return name + " " + middleName + " " + familyName + " " + age;
@@ -55,11 +60,14 @@ public class All {
         Person person = new Person("John", "Dow", "Junior", 35);
         System.out.println(person.toString());
 
-        int age = person.getAge();
-        System.out.println("Возраст:" + age);
+        System.out.println("Год рождения " + person.getYear());
 
         person.setMiddleName("William");
         System.out.println(person.getMiddleName());
+    }
+    public static void printAge(int age){
+        System.out.println("Возраст:" + age);
+
     }
 
 }
