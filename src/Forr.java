@@ -7,11 +7,7 @@ public class Forr {
             }
         }
     }
-
     public static boolean multiplicityСheck(int i){
-        if (i % 4 == 0) {
-         return true;
-        }
-        return false;
+        return  i % 4 == 0;
     }
 }
