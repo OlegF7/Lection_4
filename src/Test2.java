@@ -5,14 +5,13 @@ public class Test2 {
     public static void main(String[] args) {
         char c = '7';
         int s = Integer.parseInt(String.valueOf(c));
-        System.out.println(s);
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите число: ");
 
         int number = scan.nextInt();
         boolean otr = false;
-        if (number < 0) otr = true;те
+        if (number < 0) otr = true;
 
         String numberStr = String.valueOf(number);
         int[] numbers = null;
